@@ -44,8 +44,8 @@ If you like our paper or code, please generously cite us:
 ```
 
 ## Acknowledgement
-Our code is based on [LaBERT](https://github.com/bearcatt/LaBERT) and [X-LXMERT](https://github.com/allenai/x-lxmert). 
-Our evaluation code is from [pytorch-fid](https://github.com/mseitzer/pytorch-fid/tree/802da3963113b5b5f8154e0e27580ee4c97460ab) and [inception_score](https://github.com/openai/improved-gan/blob/master/inception_score/README.md).
+Our code is mainly based on [LaBERT](https://github.com/bearcatt/LaBERT) and [X-LXMERT](https://github.com/allenai/x-lxmert). 
+Our text-to-image generation evaluation code is mainly based on [CLIP](https://github.com/openai/CLIP), [pytorch-fid](https://github.com/mseitzer/pytorch-fid/tree/802da3963113b5b5f8154e0e27580ee4c97460ab) and [inception_score](https://github.com/openai/improved-gan/blob/master/inception_score/README.md).
 We sincerely thank them for their contributions!
 
 Feel free to open issues or email to me for help to use this code. Any feedback is welcome!
