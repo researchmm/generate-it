@@ -8,10 +8,14 @@ Yupan Huang, Bei Liu, Yutong Lu, in ACM MM 2021 (Industrial Track).
 [A Picture is Worth a Thousand Words: A Unified System for Diverse Captions and Rich Images Generation](https://arxiv.org/abs/2110.09756), \
 Yupan Huang, Bei Liu, Jianlong Fu, Yutong Lu, in ACM MM 2021 (Video and Demo Track).
 
-Poster or slides are available in the `assets` folder by visiting [OneDrive](https://mail2sysueducn-my.sharepoint.com/:f:/g/personal/huangyp28_mail2_sysu_edu_cn/EkCFDwd2bQpKtYwyBi3A8ukBHWyNMQ_Tkw9ZeQhYOTMTBA?e=xsMWPO).
+Poster and slides are available in the [`assets` folder](https://huggingface.co/datasets/HYPJUDY/generate-it/tree/main/assets) of our Hugging Face dataset.
 
 ## Data & Pre-trained Models
-Download preprocessed data and our pre-trained models by visiting [OneDrive](https://mail2sysueducn-my.sharepoint.com/:f:/g/personal/huangyp28_mail2_sysu_edu_cn/EkCFDwd2bQpKtYwyBi3A8ukBHWyNMQ_Tkw9ZeQhYOTMTBA?e=xsMWPO).
+Download preprocessed data and our pre-trained models from Hugging Face: [HYPJUDY/generate-it](https://huggingface.co/datasets/HYPJUDY/generate-it).
+```bash
+pip install -U "huggingface_hub[hf_xet]"
+hf download HYPJUDY/generate-it --repo-type dataset --local-dir /path/to/generate-it
+```
 We suggest following our data structures, which is consistent with the paths in `config.py`. You may need to modify the `root_path` in `config.py`.
 In addition, please following the instructions to prepare some other data:
 * Download grid features in path `data/grid_features` provided by X-LXMERT or follow [feature extraction](https://github.com/allenai/x-lxmert/blob/master/feature_extraction/README.md) to extract these features.
@@ -21,7 +25,7 @@ In addition, please following the instructions to prepare some other data:
   wget https://ai2-vision-x-lxmert.s3-us-west-2.amazonaws.com/butd_features/COCO/maskrcnn_test_grid8.h5 -P data/grid_features
   ```
 * For text-to-image evaluation on MSCOCO dataset, we need the real images to calculate the FID metric.
-  For UMT-DBITG, we use MSCOCO karpathy split, which has been included in the OneDrive folder (`images/imgs_karpathy`).
+  For UMT-DBITG, we use MSCOCO karpathy split, which has been included in the Hugging Face dataset (`images/imgs_karpathy.zip`).
   For UMT-BITG, please download [MSCOCO validation set](http://images.cocodataset.org/zips/val2014.zip) in path `images/coco_val2014`.
 
 
